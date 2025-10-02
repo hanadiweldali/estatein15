@@ -24,3 +24,22 @@ body{
     border-radius: 10px;
     border: 2px #3c3535 solid; 
 }
+.above-nav {
+    background-image: url(./../img/bg-above-nav.png);
+    background-size:cover;
+}
+.above-nav .x-icon{
+cursor: pointer;
+}
+@media screen and (max-width:500px) {
+    .above-nav p,a{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:370px) {
+    .above-nav p,a{
+        font-size: 8px;
+    }
+
+}
