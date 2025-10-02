@@ -1,0 +1,26 @@
+.bg-navbar{
+    background-color: #1E1E1E;
+}
+body{
+    background-color: #000000;
+    font-family:Urbanist;
+}
+.gap-30{
+     gap: 30px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    background-color: #00000054;
+    padding:14px 24px;
+    border-radius: 10px;
+    border: 2px #3c3535 solid;
+}
+.font{
+    font-family:Urbanist;
+    
+}
+.contact{
+   background-color: #00000054;
+    padding:14px 24px;
+    border-radius: 10px;
+    border: 2px #3c3535 solid; 
+}
