@@ -5,7 +5,7 @@
     background-color: #1E1E1E;
 }
 body{
-    background-color: #141414;
+    background-color: #000;
     font-family:Urbanist;
 }
 .gap-30{
@@ -53,8 +53,8 @@ cursor: pointer;
 }
 /* .CTA{
     background-image: url(./../img/Abstract\ Design.png);
+    background-image: url(./../img/Abstract\ Design.png);
    background-repeat: no-repeat;
-   background-color: gray;
 
 } */
 
@@ -78,5 +78,11 @@ cursor: pointer;
     }
     
 }
+.line{
+    height: 5px;
+    color: #4D4D4D;
+}
     
-
+.footer h2{
+    font-size: 25px;
+}
