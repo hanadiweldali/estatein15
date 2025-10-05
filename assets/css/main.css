@@ -1,8 +1,11 @@
+:root{
+    --mainColor:#6F3DF6;
+}
 .bg-navbar{
     background-color: #1E1E1E;
 }
 body{
-    background-color: #000000;
+    background-color: #141414;
     font-family:Urbanist;
 }
 .gap-30{
@@ -22,7 +25,7 @@ body{
    background-color: #00000054;
     padding:14px 24px;
     border-radius: 10px;
-    border: 2px #3c3535 solid; 
+    border: 2px #333333 solid; 
 }
 .above-nav {
     background-image: url(./../img/bg-above-nav.png);
@@ -37,9 +40,43 @@ cursor: pointer;
     }
     
 }
+.bg-x-icon{
+    background-color: #333333;
+    width:20px;
+    height:20px;
+}
 @media screen and (max-width:370px) {
     .above-nav p,a{
-        font-size: 8px;
+        font-size: 9.5px;
     }
 
 }
+/* .CTA{
+    background-image: url(./../img/Abstract\ Design.png);
+   background-repeat: no-repeat;
+   background-color: gray;
+
+} */
+
+.bg-main-color{
+    background-color: var(--mainColor);
+    transition: all 0.5s;
+}
+.CTA .right-side-CTA button:hover{
+    background-color: #561ef0;
+}
+    .CTA p{
+        font-size: 16px;
+    }
+     .CTA h2{
+        font-size: 35px;
+    }
+
+@media screen and (max-width:768px) {
+    .btn{
+        width: 100%;
+    }
+    
+}
+    
+
