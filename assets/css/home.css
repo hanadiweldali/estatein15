@@ -1,0 +1,33 @@
+/* .hero .right-side-hero{
+    background-image: url(./../img/Container.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+.main-btn-hero:hover{
+    background-color: #561ef0;
+}
+
+.left-side-hero img {
+    width: 100%;
+    height: 100%;
+   object-fit: contain;
+  border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .right-side-hero {
+    order: -1; 
+  }
+.hh {
+  position: absolute;
+     top: 120%;
+  left: 50%;
+}
+  .left-side-hero .hero-counter {
+    justify-content: center;
+  }
+  .left-side-hero  {
+    align-items: center;
+  }
+
+}

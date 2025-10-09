@@ -1,11 +1,23 @@
 :root{
     --mainColor:#6F3DF6;
 }
+.container-fit{
+    .container{
+  width:calc(100% - 320px);
+  margin: auto;
+}
+}
+.main-bg{
+    background-color: var(--mainColor);
+}
+.sec-bg{
+    background-color: #1E1E1E;
+}
 .bg-navbar{
     background-color: #262626;
 }
 body{
-    background-color: #000;
+    background-color: #262626;
     font-family:Urbanist;
 }
 .gap-30{
@@ -62,6 +74,16 @@ cursor: pointer;
     background-color: var(--mainColor);
     transition: all 0.5s;
 }
+.right-side-cta{
+    background-image: url(./../img/bg-cta.svg);
+    background-repeat: no-repeat;
+}
+.left-side-cta{
+    background-image: url(./../img/bg-cta.svg);
+    background-repeat: no-repeat;
+
+}
+
 .CTA .right-side-CTA button:hover{
     background-color: #561ef0;
 }
