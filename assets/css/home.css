@@ -6,22 +6,39 @@
 .main-btn-hero:hover{
     background-color: #561ef0;
 }
-
-.left-side-hero img {
-    width: 100%;
-    height: 100%;
-   object-fit: contain;
-  border-radius: 20px;
+.sub-container-img {
+  position: absolute;
+ width:150px;
+  left:54%;
+  top: 10%;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name:sub_container-opacity;
+animation-duration: 1s;
+animation-delay: 1.5s;
+  
+}
+@keyframes sub_container-opacity {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 1px) and (max-width:992px) {
   .right-side-hero {
     order: -1; 
   }
-.hh {
-  position: absolute;
-     top: 120%;
-  left: 50%;
+.right-side-hero img {
+    width: 50%;
+    height: 50%;
+   object-fit: contain;
+}
+.sub-container-img {
+ display: none;
+  
 }
   .left-side-hero .hero-counter {
     justify-content: center;
@@ -29,5 +46,54 @@
   .left-side-hero  {
     align-items: center;
   }
+}
 
+
+.bg_dark{
+  background-color: #1A1A1A;
+}
+.bg__grey{
+  background-color: #262626;
+}
+.border__dark{
+  border: #1A1A1A 5px solid;
+}
+  
+
+
+.animate-left ,.animate-right{
+  transform: translateX(0);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  
+}
+.animate-left{
+animation-name:slideLeft;
+animation-duration: 2s;
+animation-delay: 0.3s;
+}
+.animate-right{
+animation-name:slideRight;
+animation-duration: 2s;
+
+}
+@keyframes slideLeft {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+@keyframes slideRight {
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity:1;
+  }
 }
