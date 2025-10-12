@@ -3,6 +3,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 } */
+ .main-btn-hero{
+  transition: all 0.7s;
+ }
 .main-btn-hero:hover{
     background-color: #561ef0;
 }
@@ -96,4 +99,43 @@ animation-duration: 2s;
     transform: translateX(0);
     opacity:1;
   }
+}
+.btn__dark{
+  background-color: #333333;
+}
+
+.featured-properties h2{
+  font-size: 48px;
+}
+.featured-properties img{
+  width:100%;
+  height: 100%;
+}
+.featured-properties .icon-in-featured-properties{
+  width:20px;
+  height: 20px;
+}
+.sm__font_size{
+  font-size: 12px;
+}
+.end-featured-properties::before{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #333333;
+  margin-top: 40px;
+}
+.mt__10{
+  margin-top: 10px;
+}
+.btn-next-befor{
+  width: 40px;
+  height: 40px;
+}
+.featured-properties-btn-bg{
+  transition: all 0.7s;
+}
+.featured-properties-btn-bg:hover{
+  background-color:#3a3636;
 }
