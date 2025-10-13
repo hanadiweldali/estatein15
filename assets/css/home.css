@@ -144,18 +144,28 @@ animation-duration: 2s;
 .featured-properties-btn-bg:hover{
   background-color:#3a3636;
 }
+.featured .featured-content{
+  flex: 1 0 200px;
+}
 .btn-next-befor p {
   white-space: nowrap;
 }
-.client .client-contant 
+.client .client-content 
 img{
   width:30px;
   height:30px;
 }
-.client .client-contant{
+.client .client-content{
   flex:1 0 200px;
 }
-.client .client-contant .profile img{
+.client .client-content .profile img{
   width: 50px;
   height: 50px;
+}
+.client-content {
+  transition: transform 0.3s ease;
+}
+
+.client-content:hover {
+  transform: scale(1.05);
 }
