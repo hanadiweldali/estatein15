@@ -227,8 +227,8 @@
         <h2 class="text-white ">Featured Properties</h2>
         <p class="text-white">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
     </div>
-    <div class="col-12 col-lg-3 col-xl-3 col-xxl-3 p-2 d-flex justify-content-center align-items-center " >
-      <button class="btn btn__dark featured-properties-btn-bg  text-white py-2 px-4">
+    <div class="col-12 col-lg-3 col- col-xl-3 col-xxl-3 d-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex p-2 d-flex justify-content-center align-items-center " >
+      <button class="btn btn__dark featured-properties-btn-bg   text-white py-2 px-4">
         View All Properties
       </button>
 
@@ -326,12 +326,22 @@
     </div>
    </div>
       <div class="d-flex flex-column end-featured-properties ">
+      
         <div class="d-flex justify-content-between">
-        <div class="mt__10">
-          <p class="text-white">01 of 60</p>
+             <div class=" d-flex align-items-center d-md-none d-lg-none d-xl-none d-xxl-none" >
+      <button class="btn btn__dark featured-properties-btn-bg   text-white py-2 px-4">
+        View All Properties
+      </button>
+
+    </div>
+        <div class="mt__10 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+          <p class="text-white">01 of<span class="text-white-50">60</span> </p>
         </div>
-        <div class="d-flex mt__10 me-5 btn-next-befor">
+        <div class="d-flex mt__10  btn-next-befor align-items-center justify-content-between">
           <img src="./assets/img/Featured Properties/Button (1).png" alt="arrow-next">
+            <div class=" d-flex flex-fill d-md-none d-lg-none d-xl-none d-xxl-none">
+          <p class="text-white m-0">01 of <span class="text-white-50">60</span> </p>
+        </div>
          <img src="./assets/img/Featured Properties/Button.png" alt="arrow-befor">
         </div>
       </div>

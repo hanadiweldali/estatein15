@@ -132,10 +132,14 @@ animation-duration: 2s;
 .btn-next-befor{
   width: 40px;
   height: 40px;
+  margin-right:80px;
 }
 .featured-properties-btn-bg{
   transition: all 0.7s;
 }
 .featured-properties-btn-bg:hover{
   background-color:#3a3636;
+}
+.btn-next-befor p {
+  white-space: nowrap;
 }
