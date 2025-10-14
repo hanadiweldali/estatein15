@@ -47,8 +47,52 @@ animation-duration: 2s;
     opacity:1;
   }
 }
-@media (min-width: 1px) and (max-width:992px) {
+@media (min-width: 1px) and (max-width:991px) {
   .right-side-hero {
     order: -1; 
+
   }
+  .after-trust::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:gray;
+}
+.after-Excellence::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:gray;
+}
+.after-client::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:gray;
+}
+.afer-commitment::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:gray;
+}
+}
+.shadow__gray{
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.432);
+
+}
+@media (min-width: 992px){
+.value .line{
+     width: 100%;
+    height: 2px;
+    background-color:gray;
+}
+.vertical-line{
+
+border-right: 1px solid gray;
+}
 }
