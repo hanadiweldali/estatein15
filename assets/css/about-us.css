@@ -9,7 +9,7 @@
   background-color: #262626;
 }
 .border__dark{
-  border: #1A1A1A 5px solid;
+  border: #555252 1px solid;
 }
 .animate-left ,.animate-right{
   transform: translateX(0);
@@ -95,4 +95,14 @@ animation-duration: 2s;
 
 border-right: 1px solid gray;
 }
+}
+.achievements .achievement{
+    flex:1 0 250px;
+}
+.achievement-content {
+  transition: transform 0.3s ease;
+}
+
+.achievement-content:hover {
+  transform: scale(1.05);
 }
