@@ -106,3 +106,10 @@ border-right: 1px solid gray;
 .achievement-content:hover {
   transform: scale(1.05);
 }
+.steps .step{
+  flex: 1 0 250px;
+
+}
+.step-content {
+  flex-grow: 1; 
+}
