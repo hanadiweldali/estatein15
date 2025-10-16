@@ -113,3 +113,30 @@ border-right: 1px solid gray;
 .step-content {
   flex-grow: 1; 
 }
+.members .member {
+  flex: 1 0 150px; 
+}
+.members .member .team-profile {
+ width: 250px;
+ height: 200px ;
+}
+
+.twitter-btn img{
+   width: 24px !important;
+  height: 20px !important;
+  
+}
+.twitter-btn{
+  bottom:5px;
+}
+.send-btn{
+  width: 40px;
+  height: 40px;
+}
+ .placeholder-team::placeholder {
+  color: #fff; 
+}
+.placeholder-team:focus {
+  outline: none;
+  box-shadow: none; 
+}
