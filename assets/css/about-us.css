@@ -140,3 +140,10 @@ border-right: 1px solid gray;
   outline: none;
   box-shadow: none; 
 }
+.member {
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
