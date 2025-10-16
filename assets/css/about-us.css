@@ -96,7 +96,7 @@ animation-duration: 2s;
 border-right: 1px solid gray;
 }
 }
-.achievements .achievement{
+.achievements .achievement .achievement-content{
     flex:1 0 250px;
 }
 .achievement-content {
@@ -104,6 +104,21 @@ border-right: 1px solid gray;
 }
 
 .achievement-content:hover {
+  transform: scale(1.05);
+}
+.border__start{
+  border-left: #6F3DF6 2px solid;
+}
+.border__start_linear{
+   border: 2px solid #3a3636;
+   border-image: linear-gradient(to bottom right ,#6F3DF6 ,#3a3636 ,#3a3636 ,#3a3636);
+  border-image-slice: 1;
+ }
+ .step {
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
   transform: scale(1.05);
 }
 .steps .step{
