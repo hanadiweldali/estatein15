@@ -7,6 +7,12 @@
   margin: auto;
 }
 }
+.bg_dark{
+  background-color: #1A1A1A;
+}
+.bg__grey{
+  background-color: #262626;
+}
 .main-bg{
     background-color: var(--mainColor);
 }
@@ -17,7 +23,7 @@
     background-color: #262626;
 }
 body{
-    background-color: #262626;
+    background-color: #1E1E1E;
     font-family:Urbanist;
 }
 .gap-30{
@@ -74,7 +80,7 @@ cursor: pointer;
     background-color: var(--mainColor);
     transition: all 0.5s;
 }
-.right-side-cta{
+/* .right-side-cta{
     background-image: url(./../img/bg-cta.svg);
     background-repeat: no-repeat;
 }
@@ -82,8 +88,11 @@ cursor: pointer;
     background-image: url(./../img/bg-cta.svg);
     background-repeat: no-repeat;
 
+} */
+.CTA{
+    background-image: url(../img/CTA.png);
+    background-color: #262626;
 }
-
 .CTA .right-side-CTA button:hover{
     background-color: #561ef0;
 }
