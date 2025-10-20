@@ -9,3 +9,9 @@
 .hero-contact-page{
     background-image: url(../img/hero-properties/Container\ \(3\).png);
 }
+.border__gray{
+   border: #282727 1px solid;
+}
+.placeholder-message-white::placeholder{
+    color: white;
+}
