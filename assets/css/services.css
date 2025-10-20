@@ -10,3 +10,7 @@
 .Unlock-the-Value-of-Your-Property-Today{
    background-image: url(../img/services-page/Card.png);
 }
+.Effortless-Property-section img ,.property-value-section img {
+    width: 60px;
+    height: 60px;
+}
