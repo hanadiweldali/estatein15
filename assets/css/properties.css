@@ -17,7 +17,7 @@
 .options {
     box-shadow: 0px 0px 10px 15px #2c2b2b;
 }
-.border__dark{
+.border___dark{
   border: #555252 1px solid;
 }
 @media screen and (max-width:992px) {
@@ -29,4 +29,16 @@
     .input-search-in-hero-section{
         width: 100%;
     }
+}
+.text__white__50{
+    color: #ffffff80;
+}
+.placeholder-message-white::placeholder {
+  color:white
+}
+.contact-properties-btn{
+  transition: all 0.6s;
+}
+.contact-properties-btn:hover{
+  background-color: #4106e3;
 }
