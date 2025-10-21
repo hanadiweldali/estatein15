@@ -25,3 +25,59 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #100f0f;
 }
+@media (max-width: 1400px) {
+  .about-images {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-images {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-images {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-images {
+    max-width: 75%;
+  }
+}
+.Explore-Estateins-World-img-1 {
+   background-image: url(../img/contact-img-section/Image\ \(9\).png);
+   padding: 100px 0;
+   background-size: cover;
+}
+.Explore-Estateins-World-img-2 {
+   background-image: url(../img/contact-img-section/Image\ \(10\).png);
+    padding: 100px 0;
+   background-size: cover;
+}
+.Explore-Estateins-World-img-3 {
+   background-image: url(../img/contact-img-section/Image\ \(11\).png);
+    padding: 100px 0;
+   background-size: cover;
+}
+.Explore-Estateins-World-img-4 {
+   background-image: url(../img/contact-img-section/Image\ \(12\).png);
+    padding: 100px 0;
+   background-size: cover;
+}
+.Explore-Estateins-World-img-5 {
+   background-image: url(../img/contact-img-section/Image\ \(13\).png);
+    padding: 100px 0;
+   background-size: cover;
+}
+.Explore-Estateins-World-img-6 {
+     background-image: url(../img/contact-img-section/Image\ \(14\).png);
+    padding: 100px 0;
+   background-size: cover;
+}
+.bac-Explore-Estateins-World{
+    background-image: url(../img/hero-properties/Container\ \(3\).png);
+}
