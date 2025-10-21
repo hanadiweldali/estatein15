@@ -51,16 +51,24 @@
        
       </ul>
         <a class="nav-link contact text-light font active" href="../html/Contact.html">Contact Us</a>
-           <a class="nav-link active  font text-center ms-2">
+       <a class="nav-link active  font text-center ms-2">
     <button type="button" class="btn text-light px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModal">
       Sign In
     </button>
    </a>
-   <span class="border-start border-secondary mx-2" style="height:25px;"></span>
+
+      <span class="border-start border-secondary d-none d-lg-block mx-2" style="height:25px;"></span>
+   <a class="nav-link active  font text-center ms-2">
+    <button type="button" class="btn bg-main-color text-light sign-in-up px-4 py-2" data-bs-toggle="modal" data-bs-target="#signupModal">
+      Sign Up
+    </button>
+   </a>
+
+   
     </div>
   </div>
 </nav>
-<div class="modal fade bg_dark" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+ <div class="modal fade bg_dark" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-dialog-centered">
       <div class="modal-content bg_dark text-white">
         <div class="modal-header border-0 d-flex flex-column align-items-center gap-2">
@@ -92,14 +100,59 @@
               <a href="#" class="forgot main-text">Forgot password?</a>
             </div>
 
-            <button type="submit" class="btn bg-main-color text-white w-100 mb-3">Sign In</button>
+            <button type="submit" class="btn bg-main-color sign-in-up text-white w-100 mb-3">Sign In</button>
 
-            <p class="create-link mb-0">Don't have an account? <a href="#" class="main-text">Create one</a></p>
+            <p class="create-link mb-0">Don't have an account? <a href="#" class="main-text" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Create one</a></p>
           </form>
         </div>
       </div>
     </div>
   </div>
+
+<div class="modal fade bg_dark" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg_dark text-white">
+      <div class="modal-header d-flex flex-column align-items-center gap-2 border-0">
+        <img src="../assets/img/logo-in-title.svg" alt="logo">
+        <h2 class="modal-title fs-4" id="signupModalLabel">Create Account</h2>
+      </div>
+
+      <div class="modal-body text-center">
+        <p class="mb-4 text-white">Fill out the form to create a new account</p>
+
+        <form>
+          <div class="mb-3 text-start">
+            <label for="signup-name" class="form-label">Full Name</label>
+            <input type="text" class="form-control text-white bg-transparent" id="signup-name" placeholder="Full Name">
+          </div>
+
+          <div class="mb-3 text-start">
+            <label for="signup-email" class="form-label">Email</label>
+            <input type="email" class="form-control text-white bg-transparent" id="signup-email" placeholder="Email">
+          </div>
+
+          <div class="mb-3 text-start">
+            <label for="signup-password" class="form-label">Password</label>
+            <input type="password" class="form-control text-white bg-transparent" id="signup-password" placeholder="Password">
+          </div>
+
+          <div class="mb-3 text-start">
+            <label for="signup-confirm" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control text-white bg-transparent" id="signup-confirm" placeholder="Confirm Password">
+          </div>
+
+          <button type="submit" class="btn bg-main-color sign-in-up text-white w-100 mb-3">Sign Up</button>
+
+          <p class="create-link mb-0">Already have an account?
+            <a href="#" class="main-text" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+              Sign In
+            </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <main>
   <section class="hero-contact ">
        <div class="py__10 hero-contact-page main-pro">
