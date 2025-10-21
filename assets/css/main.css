@@ -16,6 +16,9 @@
 .main-bg{
     background-color: var(--mainColor);
 }
+.main-text{
+    color: var(--mainColor);
+}
 .sec-bg{
     background-color: #1E1E1E;
 }
@@ -140,3 +143,11 @@ cursor: pointer;
     }
     
 }
+.form-control::placeholder{
+  
+color: white;
+}
+/* .logo-in-sign-in{
+    width: 200px;
+    height: 200px;
+} */

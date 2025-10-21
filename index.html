@@ -102,14 +102,60 @@
               >
             </li>
           </ul>
-          <a
-            class="nav-link contact text-light font active"
-            href="./html/Contact.html"
-            >Contact Us</a
-          >
+         
+          <a class="nav-link contact text-light font active" href="./html/Contact.html">Contact Us</a>
+           <a class="nav-link active  font text-center ms-2">
+    <button type="button" class="btn text-light px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Sign In
+    </button>
+   </a>
+
+      <span class="border-start border-secondary mx-2" style="height:25px;"></span>
+ 
+
         </div>
       </div>
     </nav>
+ <div class="modal fade bg_dark" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content bg_dark text-white">
+        <div class="modal-header border-0 d-flex flex-column align-items-center gap-2">
+          <img src="./assets/img/logo-in-title.svg" class="logo-in-sign-in" alt="logo">
+          <h2 class="modal-title  fs-4" id="loginModalLabel">
+            Sign In
+          </h2>
+        </div>
+
+        <div class="modal-body text-center">
+          <p class="mb-4 text-white">Enter your credentials to continue</p>
+
+          <form>
+            <div class="mb-3 text-start">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control bg-transparent" id="email" placeholder="Email">
+            </div>
+
+            <div class="mb-3 text-start position-relative">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control bg-transparent" id="password" placeholder="Password">
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember">Remember me</label>
+              </div>
+              <a href="#" class="forgot main-text">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn bg-main-color text-white w-100 mb-3">Sign In</button>
+
+            <p class="create-link mb-0">Don't have an account? <a href="#" class="main-text">Create one</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <main>
       <section class="hero position-relative">
@@ -179,6 +225,7 @@
            <!-- <div class="hh text-white bg-danger">hanadi</div> -->
        
       </section>
+      
       <section class="services py-3 ">
        <div class="container-fluid">
         <div class="row bg_dark p-4 g-1">

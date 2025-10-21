@@ -25,7 +25,7 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #100f0f;
 }
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   .about-images {
     max-width: 90%;
   }
@@ -47,7 +47,7 @@
   .about-images {
     max-width: 75%;
   }
-}
+} */
 .Explore-Estateins-World-img-1 {
    background-image: url(../img/contact-img-section/Image\ \(9\).png);
    padding: 100px 0;
