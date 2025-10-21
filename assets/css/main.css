@@ -151,6 +151,14 @@ color: white;
     width: 200px;
     height: 200px;
 } */
+ .sign-in-up{
+    transition: all 0.6s;
+ }
  .sign-in-up:hover{
     background-color: #561ef0;
+}
+.modal-bg {
+  background-color: rgba(27,27,34,0.7);
+  backdrop-filter: blur(10px);
+  border: none;
 }
