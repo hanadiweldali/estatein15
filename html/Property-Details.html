@@ -12,6 +12,8 @@
     <link rel="icon"  href="../assets/img/logo-in-title.svg" alt="logo in title">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/main.css"/>
+    <link rel="stylesheet" href="../assets/css/property-details.css"/>
+
   </head>
   <body>
      <div class="container-fluid d-flex justify-content-between align-items-center above-nav">
@@ -24,7 +26,7 @@
 </div>
     
   </div>
-   <nav class="navbar navbar-expand-lg bg-navbar navbar-dark position-sticky top-0">
+   <nav class="navbar navbar-expand-lg bg-navbar navbar-dark z-3 position-sticky top-0">
   <div class="container">
    <a class="navbar-brand d-none d-lg-block" href="#"><img src="../assets/img/Logo-for-desktop.svg" alt="logo"/></a>
    <a class="navbar-brand d-none d-md-block d-lg-none" href="#"><img src="../assets/img/logo-for laptop.svg" alt="logo"/></a>
@@ -41,19 +43,180 @@
           <a class="nav-link  font p-3" href="./about.html">About Us</a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link font active" href="./Properties.html">Properties</a>
+          <a class="nav-link font p-3" href="./Properties.html">Properties</a>
         </li>
          <li class="nav-item p-2">
           <a class="nav-link font p-3" href="../html/Services.html">Services</a>
         </li>
        
       </ul>
-        <a class="nav-link contact text-light font active" href="./Contact.html">Contact Us</a>
+          <a class="nav-link contact text-light font active" href="../html/Contact.html">Contact Us</a>
+           <a class="nav-link active  font text-center ms-2">
+    <button type="button" class="btn text-light px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Sign In
+    </button>
+   </a>
+
+      <span class="border-start border-secondary d-none d-lg-block mx-2" style="height:25px;"></span>
+   <a class="nav-link active  font text-center ms-2">
+    <button type="button" class="btn bg-main-color text-light sign-in-up px-4 py-2" data-bs-toggle="modal" data-bs-target="#signupModal">
+      Sign Up
+    </button>
+   </a>
     </div>
   </div>
 </nav>
+<div class="modal fade modal-bg" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content bg_dark text-white">
+        <div class="modal-header border-0 d-flex flex-column align-items-center gap-2">
+          <img src="../assets/img/logo-in-title.svg" class="logo-in-sign-in" alt="logo">
+          <h2 class="modal-title  fs-4" id="loginModalLabel">
+            Sign In
+          </h2>
+        </div>
+
+        <div class="modal-body text-center">
+          <p class="mb-4 text-white">Enter your credentials to continue</p>
+
+          <form>
+            <div class="mb-3 text-start">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control bg-transparent" id="email" placeholder="Email">
+            </div>
+
+            <div class="mb-3 text-start position-relative">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control bg-transparent" id="password" placeholder="Password">
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember">Remember me</label>
+              </div>
+              <a href="#" class="forgot main-text">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn bg-main-color sign-in-up text-white w-100 mb-3">Sign In</button>
+
+            <p class="create-link mb-0">Don't have an account? <a href="#" class="main-text" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Create one</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade modal-bg" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg_dark text-white">
+      <div class="modal-header d-flex flex-column align-items-center gap-2 border-0">
+        <img src="../assets/img/logo-in-title.svg" alt="logo">
+        <h2 class="modal-title fs-4" id="signupModalLabel">Create Account</h2>
+      </div>
+
+      <div class="modal-body text-center">
+        <p class="mb-4 text-white">Fill out the form to create a new account</p>
+
+        <form>
+          <div class="mb-3 text-start">
+            <label for="signup-name" class="form-label">Full Name</label>
+            <input type="text" class="form-control text-white bg-transparent" id="signup-name" placeholder="Full Name">
+          </div>
+
+          <div class="mb-3 text-start">
+            <label for="signup-email" class="form-label">Email</label>
+            <input type="email" class="form-control text-white bg-transparent" id="signup-email" placeholder="Email">
+          </div>
+
+          <div class="mb-3 text-start">
+            <label for="signup-password" class="form-label">Password</label>
+            <input type="password" class="form-control text-white bg-transparent" id="signup-password" placeholder="Password">
+          </div>
+
+          <div class="mb-3 text-start">
+            <label for="signup-confirm" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control text-white bg-transparent" id="signup-confirm" placeholder="Confirm Password">
+          </div>
+
+          <button type="submit" class="btn bg-main-color sign-in-up text-white w-100 mb-3">Sign Up</button>
+
+          <p class="create-link mb-0">Already have an account?
+            <a href="#" class="main-text" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+              Sign In
+            </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <main>
- <section class="CTA mt-3">
+  <section class="view-apt py-5">
+    <div class="container">
+      <div class="d-flex property-info-bar justify-content-between">
+    <div class="d-flex flex-wrap align-items-center gap-3">
+    <p class="text-white m-0 fs-2">Seaside Serenity Villa</p>
+    <div class=" bg_dark border border-secondary p-2 rounded-4  d-flex align-items-center justify-content-center gap-2 text-white"><img src="../assets/img/properties-detailes/Subtract (1).svg" alt="loaction"><p class="text-white m-0">Malibu, California</p></div>
+ </div>
+ <div class="d-flex flex-column justify-content-center">
+  <span class="text-white-50">Price</span>
+  <p class="text-white fs-4">$1,250,000</p>
+</div>
+ </div>
+ <div id="carouselExampleIndicators" class="carousel carousel-fade bg__grey p-3 rounded-4 mt-5">
+  <div class="carousel-indicators carousel_indicators d-flex align-items-center  bg__grey rounded-pill">
+    <img src="../assets/img/Featured Properties/Button (1).png" alt="">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-main-color" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <img src="../assets/img/Featured Properties/Button.png" alt="">
+  </div>
+  <div class="carousel-inner">
+   <div class="d-flex  gap-2 property-thumbnails  justify-content-evenly bg_dark p-2">
+    <img src="../assets/img/properties-detailes/gg/Image (17).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (18).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (19).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (20).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (21).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (22).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (23).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (24).png" alt="villa-sm">
+    <img src="../assets/img/properties-detailes/gg/Image (25).png" alt="villa-sm">
+   </div>
+    <div class="carousel-item d-flex justify-content-center align-items-center gap-2 mt-3 apt-img active">
+     <img src="../assets/img/properties-detailes/Image (15).png" class="rounded-4"  alt="villa">
+      <img src="../assets/img/properties-detailes/Image (16).png"  class="rounded-4 d-none d-lg-block" alt="villa">
+
+    </div>
+     <div class="carousel-item d-flex justify-content-center align-items-center gap-2 mt-3 apt-img ">
+     <img src="../assets/img/properties-detailes/Image (15).png" class="rounded-4" alt="villa">
+      <img src="../assets/img/properties-detailes/Image (16).png" class="rounded-4 d-none d-lg-block" alt="villa">
+
+    </div>
+     <div class="carousel-item d-flex justify-content-center align-items-center gap-2 mt-3 apt-img ">
+     <img src="../assets/img/properties-detailes/Image (15).png" class="rounded-4" alt="villa">
+      <img src="../assets/img/properties-detailes/Image (16).png" class="rounded-4 d-none d-lg-block" alt="villa">
+
+    </div>
+      <div class="carousel-item d-flex justify-content-center align-items-center gap-2 mt-3 apt-img ">
+     <img src="../assets/img/properties-detailes/Image (15).png" class="rounded-4" alt="villa">
+      <img src="../assets/img/properties-detailes/Image (16).png" class="rounded-4 d-none d-lg-block" alt="villa">
+
+    </div>
+      <div class="carousel-item d-flex justify-content-center align-items-center gap-2 mt-3 apt-img">
+     <img src="../assets/img/properties-detailes/Image (15).png" class="rounded-4" alt="villa">
+      <img src="../assets/img/properties-detailes/Image (16).png" class="rounded-4 d-none d-lg-block" alt="villa">
+
+    </div>
+ 
+  </div>
+</div>
+ </div>
+  </section>
+ <section class="CTA mt-3 mt-5">
         <div>
           <div class="container-lg">
             <div class="row">
