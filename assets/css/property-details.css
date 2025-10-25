@@ -33,3 +33,9 @@
     width: 20%;
     height: 20%;
 }
+.key-features{
+    background-image: url(../img/hero-properties/Container\ \(3\).png);
+}
+.border__start{
+    border-left: 3px solid var(--mainColor);
+}
