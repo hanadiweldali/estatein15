@@ -25,34 +25,44 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: #100f0f;
 }
+.about-images {
+  width: 100%;
+  height: auto;
+}
 /* @media (max-width: 1400px) {
   .about-images {
-    max-width: 90%;
+    width: 120%;
+     height: auto;
+  
   }
 }
 
 @media (max-width: 992px) {
   .about-images {
-    max-width: 85%;
+    width: 140%;
+     height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .about-images {
-    max-width: 80%;
+    width: 140%;
+     height: auto;
   }
 }
 
 @media (max-width: 576px) {
   .about-images {
-    max-width: 75%;
+    width: 120%;
+     height: auto;
   }
 } */
-.Explore-Estateins-World-img-1 {
+/* .Explore-Estateins-World-img-1 {
    background-image: url(../img/contact-img-section/Image\ \(9\).png);
    padding: 100px 0;
    background-size: cover;
 }
+   
 .Explore-Estateins-World-img-2 {
    background-image: url(../img/contact-img-section/Image\ \(10\).png);
     padding: 100px 0;
@@ -78,6 +88,7 @@
     padding: 100px 0;
    background-size: cover;
 }
+    */
 .bac-Explore-Estateins-World{
     background-image: url(../img/hero-properties/Container\ \(3\).png);
 }
