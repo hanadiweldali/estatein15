@@ -39,3 +39,9 @@
 .border__start{
     border-left: 3px solid var(--mainColor);
 }
+.keys{
+    transition: all 0.6s ease;
+}
+.keys:hover{
+     transform: scale(1.02);
+}

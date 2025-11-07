@@ -50,8 +50,13 @@ animation-delay: 1.5s;
     align-items: center;
   }
 }
-
-
+.arrow{
+  transition: all 0.3s ease;
+}
+.arrow:hover{
+ 
+   transform: translate(5px, -5px);
+}
 .bg_dark{
   background-color: #1A1A1A;
 }
@@ -165,7 +170,19 @@ img{
 .client-content {
   transition: transform 0.3s ease;
 }
+.Statistics-Section{
+  transition: transform 0.3s ease;
+}
 
 .client-content:hover {
   transform: scale(1.05);
+}
+.Statistics-Section:hover {
+  transform: scale(1.05);
+}
+.move-img{
+  transition:all 0.9s ease ;
+}
+.move-img:hover{
+  transform: rotate(360deg);
 }

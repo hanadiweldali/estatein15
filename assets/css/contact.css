@@ -28,6 +28,10 @@
 .about-images {
   width: 100%;
   height: auto;
+  transition: all 0.6s ease;
+}
+.about-images:hover{
+   transform: scale(1.03);
 }
 /* @media (max-width: 1400px) {
   .about-images {
@@ -91,4 +95,10 @@
     */
 .bac-Explore-Estateins-World{
     background-image: url(../img/hero-properties/Container\ \(3\).png);
+}
+.bg-main-color-contact{
+   transition: all 0.6s ease;
+}
+.bg-main-color-contact:hover{
+   background-color:#531bed;
 }
