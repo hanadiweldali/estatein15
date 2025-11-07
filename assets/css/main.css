@@ -7,6 +7,12 @@
   margin: auto;
 }
 }
+ .main-btn-hero{
+  transition: all 0.7s;
+ }
+.main-btn-hero:hover{
+    background-color: #561ef0;
+}
 .bg_dark{
   background-color: #1A1A1A;
 }
